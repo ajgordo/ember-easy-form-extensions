@@ -52,6 +52,7 @@
   "dependencies": {
     "ember-cli-babel": "^5.0.0",
     "ember-cli-htmlbars": "0.7.6",
+    "ember-legacy-views": "0.2.0",
     "ember-validations": "2.0.0-alpha.3"
   },
   "ember-addon": {
