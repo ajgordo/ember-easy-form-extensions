@@ -1,14 +1,6 @@
-{{view 'select'
-  id=inputId
-  invalid=isInvalid
-
-  content=content
-  name=name
-  value=value
-  selection=selection
-  prompt=prompt
-  disabled=disabled
-  required=required
-  optionValuePath=optionValuePath
-  optionLabelPath=optionLabelPath
-}}
+<select onchange={{action (mut selection) value=value}}
+  class="form-control ember-select">
+  {{#each content as |contentItem|}}
+    <option value={{contentItem}} >{{contentItem}}</option>
+  {{/each}}
+</select>
