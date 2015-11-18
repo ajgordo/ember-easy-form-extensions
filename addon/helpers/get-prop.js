@@ -6,4 +6,4 @@ export function getProp(params) {
   return model[params[1]] || '';
 }
 
-export default Ember.HTMLBars.makeBoundHelper(getProp);
+export default Ember.Helper.helper(getProp);
